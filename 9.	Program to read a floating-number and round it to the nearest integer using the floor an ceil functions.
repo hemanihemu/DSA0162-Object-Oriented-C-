@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+// Driver function
+int main()
+{
+    // using floor function which return
+    // floor of input value
+    cout << "Floor of 2.3 is : " << floor(2.3) << endl;
+    cout << "Floor of -2.3 is : " << floor(-2.3) << endl;
+ 
+    return 0;
+}
