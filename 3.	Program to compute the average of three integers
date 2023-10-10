@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float first, second, third, sum, avg;
+
+    cout << "Enter the first number: " << endl;
+    cin >> first;
+
+    cout << "Enter the second number: " << endl;
+    cin >> second;
+
+    cout << "Enter the third number: " << endl;
+    cin >> third;
+
+    sum = first + second + third;
+    avg = sum / 3;
+
+    cout << "Average value: " << avg << endl;
+
+    return 0;
+}
