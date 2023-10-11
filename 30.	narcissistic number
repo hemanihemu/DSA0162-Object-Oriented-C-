@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() 
+{
+    int nl,nu;
+ cout << "\n\n Find the Narcissistic decimal numbers between a specific range: \n";
+ cout << " --------------------------------------------------------------------\n";
+ 	cout << " Input the lower limit: ";
+    cin>>nl;	
+	cout << " Input a upper limit: ";
+    cin>>nu;		
+  cout << " The Narcissistic decimal numbers between "<<nl<<" and "<<nu<<" are: \n";
+    int i,ctr,j,orn,n,m,sum;
+    for(orn=nl;orn<=nu;orn++)
+    {
+    ctr=0;
+    sum=0;
+    n=orn;
+       while(n>0) 
+       {
+          n=n/10;
+           ctr++;
+       }
+        n=orn;
+       while(n>0) 
+       {
+          m=n % 10;
+          sum=sum+pow(m,ctr);
+          n=n/10;
+       }
+       if(sum==orn)
+       {
+           cout<<" "<<orn<<" ";
+    }
+}
+	cout<<endl;
+}
