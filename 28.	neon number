@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num,square,rem,sum=0;
+    //Input a number
+    cout<<"Enter the number"<<endl;
+    cin>>num;  
+    //Calculate the square of the input
+    square=num*num;
+    //Sum the digits of the square 
+    while(square>0)
+    {
+       rem=square%10; 
+       sum=sum+rem;
+       square=square/10;
+    }
+    //Neon number if sum and num is equal
+    if(sum==num)
+    cout<<num<<" is a Neon number"<<endl;
+    else
+    cout<<num<<" is not a Neon number"<<endl
+     return 0:
+}
