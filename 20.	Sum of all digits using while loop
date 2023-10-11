@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+        cout << "Enter a number";
+        int individual_number, input_num, sum;
+        cin >> input_num;
+        cout << endl;
+        do
+        {
+                individual_number = input_num % 10; 
+                sum += individual_number;
+                input_num = input_num / 10;
+
+        } while (input_num > 0);
+
+        cout << "The sum is: " << sum << endl;
+        return 0;
+}
