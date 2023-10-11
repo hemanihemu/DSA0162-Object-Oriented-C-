@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int p, q, i, g;
+   
+    
+    cout << "-----Enter the two positive integer numbers-----\n";
+    cin >> p >> q;
+
+    for (i = 1; i <= p && i <= q; ++i) {
+        if (p % i == 0 && q % i == 0) {
+            g = i;
+        }
+    }
+
+    cout << "\nThe GCD number of " << p << " & " << q << " is: " << g << "\n";
+    return 0;
+}
